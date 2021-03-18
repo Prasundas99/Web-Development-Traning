@@ -5,7 +5,7 @@ Introduction (
 ) (PPT)
 
 //Code
-Inline and embodded style
+Inline and embedded style
 External style
 comments
 targetting elements
@@ -16,21 +16,11 @@ Sellector Specifificity
 important declaration
 targetting multiple elements
 
-What are sellector: Different types of sellectors (ppt)
-
-Decedents sellectors
-Adjasent sellectors
-atribute sellectors
-Pseud sellectors
-nth type of sellector
-Combining sellector
-universal sellector
-
 Fonts:  Size ,family Weight , Decoration , color , transform
 
 Link styling
 spacing: letter spacing ,line height, paragraph spacing
-Box model
+
 Margin
 Padding
 Border
@@ -43,3 +33,7 @@ Gradient
 Box shadow
 
 Project
+
+Bootstrap
+-by projects
+

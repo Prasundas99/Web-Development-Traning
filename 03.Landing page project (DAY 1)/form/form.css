@@ -1,0 +1,59 @@
+body{ background-color:skyblue;
+    margin-left: 4cm;
+    margin-right: 6cm;
+    margin-top: 1cm;
+    border-left: 10px black;
+
+}
+
+form{
+    width: 500px;
+    padding: 19px;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    margin: 0 auto;
+    line-height: 1cm;
+    text-align: justify;
+    font-size: 5mm;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+font-weight: bolder;
+}
+
+
+
+input[ type='text'],input[type='password']{
+    width: 350px;
+    height: 0.6cm;
+    
+     outline: black;
+}
+select{
+    width: 305px;
+    height: 0.6cm;
+    outline: none;
+ 
+}
+input[ type='text']:focus,input[type='password']:focus ,select:focus{
+background: rgb(204, 222, 230);
+color: rgb(10, 10, 10);
+}
+input[ type='text']:hover,input[type='password']:hover ,select:hover,textarea:hover{
+border-color: blue;
+}
+textarea{
+    resize: none;
+    
+}
+input[type='submit'],input[type='reset']
+{
+    width: 445px;
+    background-color: rgb(177, 17, 17);
+    color: rgb(252, 252, 204);
+    border: 1px solid black;
+    height: 25px;
+}
+input[type='submit']:hover,input[type='reset']:hover
+{
+    background: red
+}
