@@ -1,0 +1,45 @@
+Introduction (
+ What is CSS
+ default browser styling
+ Syntax
+) (PPT)
+
+//Code
+Inline and embodded style
+External style
+comments
+targetting elements
+targetting ID and classes
+conflicts and cascaades
+Inheritance
+Sellector Specifificity
+important declaration
+targetting multiple elements
+
+What are sellector: Different types of sellectors (ppt)
+
+Decedents sellectors
+Adjasent sellectors
+atribute sellectors
+Pseud sellectors
+nth type of sellector
+Combining sellector
+universal sellector
+
+Fonts:  Size ,family Weight , Decoration , color , transform
+
+Link styling
+spacing: letter spacing ,line height, paragraph spacing
+Box model
+Margin
+Padding
+Border
+Block-Level Elemets
+
+Width height
+rounded corners
+Background colours
+Gradient 
+Box shadow
+
+Project

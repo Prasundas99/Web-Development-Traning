@@ -1,0 +1,14 @@
+1. Introduction (Ppt)
+2. What is HTML (PPT)
+3. Syntax and structure  (ppt and code 1st in notepad next in vs code)and 
+Your 1st web page (Code)
+5. head and body tag {Rest code from here)
+6. Heading and text (h1 - h6  p b br hr)
+9.The img tags
+10.Html links
+11.Html list
+13. The div tag
+14. ID's and Classes
+15.Form
+16. Adding CSS
+17. Adding js  
