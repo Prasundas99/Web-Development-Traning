@@ -1,0 +1,4 @@
+Git and Github references:
+git reference blog : https://rubygarage.org/blog/most-basic-git-commands-with-examples#article_title_0
+
+git cloning using command prompt: https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone
