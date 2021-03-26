@@ -1,0 +1,37 @@
+Introduction
+hello World
+Variable
+console log
+get element by id
+Rules and syntax:
+	Where to place js
+	Dom manupulation
+	
+
+
+BMI calculator
+	if else
+	function
+	Boolean rule
+	simple mathematical operation
+	alert
+
+More to go.........
+
+Whats next
+
+Project () => {
+
+	Drum Kit: https://github.com/Prasundas99/Drum-kit
+	Text-Editor: https://github.com/Prasundas99/JS-Text-Editor
+	Covid-19 Tracker: https://github.com/Prasundas99/Covid-19-India-stats (Api call)
+	Weather app: https://github.com/Prasundas99/Weather-App
+}	
+
+Advance:
+	Image to hash code generator: https://github.com/Prasundas99/Image-to-Hash-Code-Generator
+
+
+
+	
+
