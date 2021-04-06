@@ -23,15 +23,18 @@ Whats next
 Project () => {
 
 	Drum Kit: https://github.com/Prasundas99/Drum-kit
-	Text-Editor: https://github.com/Prasundas99/JS-Text-Editor
+	
 	Covid-19 Tracker: https://github.com/Prasundas99/Covid-19-India-stats (Api call)
 	Weather app: https://github.com/Prasundas99/Weather-App
 }	
 
 Advance:
 	Image to hash code generator: https://github.com/Prasundas99/Image-to-Hash-Code-Generator
-
+	Text-Editor: https://github.com/Prasundas99/JS-Text-Editor
 
 
 	
+//clock  covid-19 tracker
+   12 , 3 , 6 , 9 ,6 backcground img change
+
 
