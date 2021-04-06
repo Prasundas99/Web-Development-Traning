@@ -1,0 +1,21 @@
+jQuery:
+    intro
+    why jQuery
+
+    syntax
+    $('sellector').action()
+
+    i.e {
+
+            $('p').click(function)
+
+    }
+
+    console.log(jQuery) == console.log($)
+
+
+    projects:
+
+   game:   https://github.com/Prasundas99/The-Amazing-Dare-Dozen
+
+   css-generator: https://github.com/Prasundas99/CSS-Generator
