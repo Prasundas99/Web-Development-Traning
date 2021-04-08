@@ -1,0 +1,210 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Gilroy', sans-serif;
+ }
+ html{
+     font-size: 16px;
+ }
+ .hide{
+     display: none;
+ }
+ .fadeIn{
+     animation: fade 0.5s ease-in-out;
+ }
+ @keyframes fade{
+     0%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 1;
+     }
+ }
+
+/*HEADER*/
+
+ header{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ 
+     max-width: 1200px;
+     width: 100%;
+     height: 75px;
+ 
+     margin: 0 auto;
+ 
+     background-color: #F3F2F2;
+ }
+
+ /*LOGO*/
+ .logo{
+     float: left;
+     display: flex;
+     align-items: center;
+     padding-left: 20px;
+ }
+ .logo img{
+     width: 50px;
+ }
+ .logo p {
+      font-size: 15px;
+     font-weight: bold;
+     color: #6a149b;
+ }
+ .logo p  i{
+    font-size: 12px;
+}
+
+ /* NAV */
+ nav{
+     float: right;
+     padding-top: 30px;
+     padding-right: 5px;
+ }
+ 
+ nav ul{
+     display: flex;
+     align-items: center;
+ }
+ nav ul li{
+     list-style: none;
+     font-size: 12px;
+ }
+ nav ul li:last-child{
+     padding-right: 20px;
+ }
+ nav ul li a {
+     text-decoration: none;
+     color: #520c7e;
+     padding: 10px;
+ }
+
+ nav ul li a :active {
+    text-decoration: none;
+    color: yellow;
+    padding: 10px;
+}
+
+ nav ul li   :hover{
+     background-color: rgba(110, 12, 139, 0.801);
+     color: white;
+ }
+ 
+ /*MAIN*/
+ 
+ main{
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ /* BG IMAGE */
+ .stats{
+     width: 100%;
+     background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('../../Assets/bg.jpg');
+     background-size: cover;
+ }
+ /*  LATEST REPORT  */
+ .latest-report{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   
+     width: 80%;
+     margin: 0 auto;
+     padding-top: 50px;
+ 
+     color: rgb(255, 250, 250);
+ }
+ 
+ 
+ .total-cases,
+ .recovered,
+ .deaths{
+     height: 100px;
+ }
+ 
+ .name{
+     font-size: 2.2em;
+     color: orange;
+     font-weight: bold;
+ }
+ 
+
+ 
+ .title{
+     font-size: 1.3pm;
+ }
+ .total-cases .value{
+     font-size: 21px;
+     font-weight: bold;
+     color: yellow;
+ }
+ .recovered .value{
+     font-size: 21px;
+     font-weight: bold;
+     color: green;
+ }
+ .deaths .value{
+     font-size: 21px;
+     font-weight: bold;
+     color: red;
+ }
+ .new-value{
+     font-size: 13px;
+ }
+
+ #chart{
+     width: 100%;
+     height: 100%;
+ }
+ 
+ /*             SCREEN WIDTH < 600px               */
+
+ @media screen and (max-width: 600px){
+     .latest-report{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     .logo p {
+        font-size: 12px;
+       font-weight: bold;
+       color: #6a149b;
+   }
+   .logo p  i{
+      font-size: 9px;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    width: 100%;
+    height: 80px;
+
+    margin: 0 auto;
+
+    background-color: #F3F2F2;
+}
+
+nav{
+    
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-top: 500px;
+    color: white;
+    padding: 10px;
+}
+ }
+ 
