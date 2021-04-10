@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Println</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<h1>Println</h1>
+        
+        <!--Form for checklist-->
+        <form class="frame">
+            <ul class="list">
+                <li>
+                    <input id="item-0" type="checkbox" onclick="check()">
+                    <label for="item-0">Create this list</label>
+                </li>
+
+                <li>
+                    <input id="item-1" type="checkbox" onclick="check()">
+                    <label for="item-1">Create this list</label>
+                </li>
+
+                <li>
+                    <input id="item-2" type="checkbox" onclick="check()">
+                    <label for="item-2">Create this list</label>
+                </li>
+            </ul>
+        </form>
+        
+        <!--Form for input-->
+		<form class="form" id="form">
+			<input type="text" placeholder="Your Name">
+			<input type="email" placeholder="Email">
+			<button type="submit" id="login-button">Submit</button>
+		</form>
+	</div>
+    
+    <!--For background animation-->
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</body>
+</html>
