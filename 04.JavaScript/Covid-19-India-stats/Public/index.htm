@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>COVID-19 India STATS </title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <header >
+        <div class="logo">
+            <img src="../Assets/logo.png" alt=""> 
+            <p>COVID-19<br/>INDIA STATS <br><i>Open Source project for tacking COVID-19 cases in India</i>  </p>
+            
+        </div>
+
+    </header>
+        <div class="stats">
+            <div class="latest-report">
+                
+                <div class="name">INDIA</div>
+                                           
+                <div class="total-cases">
+                    <div class="title">Total Confirmed Cases</div>
+                    <div class="value" id="total-case" >0 </div>
+                    <div class="new-value" id="delcase">+0 <span class="glyphicon glyphicon-arrow-up"></span></div>
+                </div>
+                <div class="recovered">
+                    <div class="title">Recovered</div>
+                    <div class="value" id="total-recover">0</div>
+                    <div class="new-value" id="delrecover">+0 <span class="glyphicon glyphicon-arrow-up"></span></div>
+                </div>
+                <div class="deaths">
+                    <div class="title">Deaths</div>
+                    <div class="value" id="total-death">0</div>
+                    <div class="new-value" id="deldeath">+0 <span class="glyphicon glyphicon-arrow-up"></span></div>
+                </div>
+                
+                
+            </div>
+            
+            
+            <br><br><br><br><br><br><br>
+            <h2>Cases Increase/Decrease Graph </h2>
+            <br><br><br>
+            <canvas class="Cases" id="1chart"> </canvas>
+
+
+
+            <br><br><br><br><br><br>
+            <h2>States Affected</h2>
+            <canvas  class="responsive" id="chart"> </canvas>
+            
+
+            
+
+            </div>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--chart.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="./JS/index.js"></script>            
+</body>
+</html>
