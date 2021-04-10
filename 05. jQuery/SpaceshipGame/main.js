@@ -11,7 +11,7 @@ $(document).ready(function(){
     //Changing css via jQuery
     spaceship.css({     //css function
         'position' : 'absolute',  // Which is static by default
-        'left' : speed00,
+        'left' : 500,
         'top': 200
     })
     
