@@ -6,7 +6,7 @@
 
 	//include 'demo.php';
 
-	//require 'demo.php';
+	//require 'demo.php';   //fatal error
 
 	//echo 'end of php';
 
@@ -19,8 +19,9 @@
 </head>
 <body>
 
-	<?php include('content.php'); ?>
-	<?php include('content.php'); ?>
+	<?php // include('content.php'); ?>
+	<?php // include('content.php'); ?>
+
 
 </body>
 </html>
