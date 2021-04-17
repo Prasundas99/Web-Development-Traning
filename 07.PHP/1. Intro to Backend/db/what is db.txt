@@ -1,8 +1,0 @@
-what is db
-types of db
-
-sql vs nosql
-
-when to use whom
-
-SQL
