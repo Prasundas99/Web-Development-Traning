@@ -38,6 +38,16 @@ fetch(url)
                          deldeath.innerHTML =`${deldeathstate} <span class="glyphicon glyphicon-arrow-up"></span>` ;
 
 
+
+
+
+
+
+
+
+
+
+                         
                         //for chart
                          //taking variable of change
                          var change = []
