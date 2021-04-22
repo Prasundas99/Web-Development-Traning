@@ -1,0 +1,26 @@
+Install
+syntax
+Comment
+variable
+Echo
+data Types
+
+db
+
+sql vs nosql
+
+intro to sql
+
+Forms:
+  In out form
+  connection with db
+
+Session cookies
+Template vs apis
+types of api
+
+AJAX (For bigger picture)
+
+project (Keeper)
+
+if time permits we will create a photo gallary system in php...

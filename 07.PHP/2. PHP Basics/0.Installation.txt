@@ -1,0 +1,3 @@
+Install XAMPP (EASIER TO GET STARTED)
+move to htdocs
+open localhost
