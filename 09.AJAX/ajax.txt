@@ -1,0 +1,11 @@
+ajax
+
+what is it
+
+Why use ajax
+
+What is json
+XML
+
+When to use whom
+
