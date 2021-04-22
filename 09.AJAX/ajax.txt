@@ -1,6 +1,11 @@
-a set of technology
+ajax
 
-what is
+what is it
 
-ajax js json
+Why use ajax
+
+What is json
+XML
+
+When to use whom
 
