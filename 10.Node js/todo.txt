@@ -1,0 +1,19 @@
+Intro to node
+
+Functional Expression
+
+Modules and require
+
+Creating server in node js only
+
+whats more in node js
+
+Express js
+
+Creating server in express js and nodemon
+
+
+Intro to projects
+
+Intro to template engine - EJS
+
