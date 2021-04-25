@@ -14,9 +14,6 @@ var sayBye = function(){
 sayBye();
 
 
-
-
-
 function callFunction(fun){
     fun();
 }

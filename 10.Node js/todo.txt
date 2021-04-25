@@ -8,6 +8,10 @@ Creating server in node js only
 
 whats more in node js
 
+es6
+
+npm
+
 Express js
 
 Creating server in express js and nodemon
