@@ -11,7 +11,9 @@ To do this response and request a set of protocol is established
 Protocols: It is a set of communication rules,that two sides agree to use when communicating
 
 Ports: A Program running on a computer can listen for requests sent to a particular port number
-eg: 172.24.86.76.3000
+eg: 172.0.0.1.3000
+
+https://www.hostinger.in/tutorials/what-is-localhost
 */
 
 var http = require('http');
