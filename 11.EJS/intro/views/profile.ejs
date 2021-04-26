@@ -1,0 +1,68 @@
+<!--
+
+    EJS = Extended JavaScript
+
+    html integrated with js templating
+
+    <%=  %>  -- Thats all
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body{
+            background-color: rgb(70, 150, 182);
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        strong{
+            font-size: 27px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <%- include('./partials/nav.ejs') %> 
+    
+    <h1>
+        You are viewing the profile of <%= person %>
+    </h1>
+
+        <p>
+            <strong>Age:</strong> 
+            <%= data.age %> 
+        </p>
+        <p>
+            <strong> Job:   </strong>
+            <%= data.job %>
+        </p>
+
+
+<!--Uisng js in ejs-->
+<h2>Hobbies :</h2>
+<ul>
+
+    <% data.hobbies.forEach(function(item){ %>
+
+        <li>
+            <%= item %>
+        </li>
+
+    <% }) %>
+
+</ul>
+</body>
+</html>
