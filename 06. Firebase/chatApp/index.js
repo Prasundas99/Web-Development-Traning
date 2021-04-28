@@ -1,6 +1,5 @@
 var database = firebase.database();
 
-console.log(database);
 
 
 //Taking name of user
@@ -25,6 +24,7 @@ function writeUserData() {
 
         for(var key in messages){
             var messagees = messages[key];
+            console.log(messagees);
         }
        var x = document.createElement("P");                        
        var t = document.createTextNode(`${messagees.name}: : ${messagees.message}`);    
@@ -32,3 +32,5 @@ function writeUserData() {
         document.getElementById('msgdiv').appendChild(x)
         console.log(t);
   });  
+
+  

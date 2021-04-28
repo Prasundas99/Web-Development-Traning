@@ -1,0 +1,15 @@
+What is ejs
+
+What is view
+
+How to pass dynamic content through ejs
+
+what is post request
+
+middleware
+
+body praser
+
+
+
+
