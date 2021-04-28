@@ -16,8 +16,9 @@ Express js
 
 Creating server in express js and nodemon
 
-
-Intro to projects
+render html using routes
 
 Intro to template engine - EJS
+
+gitignore
 
