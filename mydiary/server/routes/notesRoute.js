@@ -5,13 +5,14 @@ import {
     patchNotes,
     deleteNotes,
   } from "../controller/NotesController.js";
+import authMiddleware from '../middleware/authenticate.js';
 
 const router = express.Router();
 
-router.get('/',getNotes);
-router.post('/',postNotes);
-router.patch('/:id', patchNotes);
-router.delete('/:id',deleteNotes);
+router.get('/',authMiddleware, getNotes);
+router.post('/',authMiddleware,postNotes);
+router.patch('/:id',authMiddleware, patchNotes);
+router.delete('/:id',authMiddleware,deleteNotes);
 
 export default router;
 
