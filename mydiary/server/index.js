@@ -11,6 +11,7 @@ import HomeRouter from './routes/homeRoute.js';
 import NotesRouter from './routes/notesRoute.js';
 import UserRouter from './routes/authRouter.js';
 
+
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -32,7 +33,7 @@ app.use(cors());
 //Routes
 app.use('/', HomeRouter);
 app.use('/notes', NotesRouter);
-app.use('/user', UserRouter)
+app.use('/users', UserRouter)
 
 
 

@@ -1,0 +1,30 @@
+GET http://localhost:5000/users
+
+
+###
+DELETE http://localhost:5000/users/6069fac6594c1f5be0502213
+
+
+###
+
+POST http://localhost:5000/reset/email-verify
+Content-Type: application/json
+
+{
+   
+     "email": "prasundas115@gmail.com"
+     
+    
+}
+
+
+###
+
+POST http://localhost:5000/reset/password/464c60cc-8a7e-44e7-8b1d-78dab5d01bf0
+Content-Type: application/json
+
+{
+    "email": "prasundas115@gmail.com",
+    "password": "janina",
+    "accessToken": "ad974b15-e31d-4ecf-8004-fad71056f24c"
+}
