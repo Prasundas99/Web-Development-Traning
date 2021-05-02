@@ -1,4 +1,5 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
+import user from './userModel.js';
 
 const Schema = mongoose.Schema
 
@@ -10,6 +11,10 @@ const noteSchema=new Schema({
     body:{
         type:String,
         required:true
+    },
+    user:{
+        type: mongoose.Types.ObjectId,
+        ref: user,
     },
 })
 

@@ -1,18 +1,18 @@
 import {generateToken} from '../utils/generateToken.js';
-import bcrypt from 'bcrypt';
 import user from '../models/userModel.js';
-
+import Mongoose from 'mongoose';
 
 //@purpose: new user and get token
-//@route:  POST/register
+//@route:  POST user/register
 //@access  Public
 export const registerUser = async(req,res,next) => {
+    
     const {username,email,password} = req.body;
-    const userExists = await AuthenticatorAssertionResponse.findOne({email: email});
+    const userExists = await user.findOne({email: email});
 
     if(userExists){
         res.status(400);
-        const err = new Error("User slready exists");
+        const err = new Error("User already exists");
         next(err);
     }
 
@@ -24,7 +24,7 @@ export const registerUser = async(req,res,next) => {
     if(User) {
         res.json({
             _id: User._id,
-            name:User.Username,
+            name:User.username,
             password: User.password,
         });
     } else {
@@ -32,17 +32,18 @@ export const registerUser = async(req,res,next) => {
         const err = new Error("Invalid User Data");
         next(err);
     }
+    
 };
 
 
 // @purpose: Auth user and get token
-// @route: POST/login
+// @route: user/login
 // @access Public
 export const loginUser = async(req, res, next) => {
     const {email, password} = req.body;
     const User = await user.findOne({email:email});
 
-    if(user && (await user.checkPassword(password))) {
+    if(User && (await User.checkPassword(password))) {
         res.json({
         _id: User._id,
         name: User.username,
@@ -56,3 +57,67 @@ export const loginUser = async(req, res, next) => {
         next(err);
     }
 };
+
+
+// @purpose: logout the user
+// @route: user/logout
+export const logoutUser = async(req, res, next) => {
+ /*   const {email, token} = req.body;
+    const User = await user.findOne({email:email});
+
+    if(User && (await User.checkPassword(password))) {
+        res.json({
+        _id: User._id,
+        name: User.username,
+        email: User.email,
+        token: generateToken(user._id),
+        });
+    }
+    else{
+        res.status(401);
+        const err = new Error("Invalid email or password");
+        next(err);
+    }
+
+    const {user,token} = req
+       User.findByIdAndUpdate(user._id,{$pull:{tokens:{token:token}}})
+        .then(()=>res.send({notice:'successfully logged out'}))
+        .catch(err=>res.send(err))
+        */
+};
+
+
+
+
+
+
+
+
+
+// @purpose: get user
+// @route: user/
+export const getUsers = async (req, res) => {
+    try {
+        const notefetch = await user.find();
+        res.status(200).json(notefetch); 
+    } catch (error) {
+        res.status(404).json({message: error.message });
+        
+    }
+};
+
+
+// @purpose: Delete user
+// @route: user/delete
+export const deleteUser = async (req,res) => {
+    const {id: id} = req.params;
+    console.log(req.params);
+    if(!Mongoose.Types.ObjectId.isValid(id))
+        res.status(404).send("No post with that is Found");
+    try {
+        await user.findByIdAndDelete(id);
+        res.status(200).json({message: "user deleted successfully"});
+    } catch (error) {
+        res.status(404).json({message: error});
+    }
+}
