@@ -11,15 +11,15 @@ import Download from "../Images/Download.png";
 import Upload from "../Images/Upload.png";
 
 /*Importing NavBar Component to create a Beautiful Navbar and Card Component from Bootstrap */
-import { Navbar, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
-/*Import the Font Awesome Icons that are used in this file*/
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faImage } from "@fortawesome/free-solid-svg-icons";
+
 
 //This function will be exported to App.js
 function Compressor() {
-  const [compressedLink, setCompressedLink] = useState("");
+{/*compressLink: take value, setCompressLink : Put value */}
+  const [compressedLink, setCompressedLink] = useState("");  {/* UseState: Alternative of Props here the data is declared inside the component
+                                                              in Props the data is declared to parent component  */}
   const [originalImage, setOriginalImage] = useState("");
   const [originalLink, setOriginalLink] = useState("");
   const [clicked, setClicked] = useState(false);
@@ -68,21 +68,6 @@ function Compressor() {
 
   return (
     <div className="mainContainer">
-      <Navbar
-        className="navbar justify-content-center"
-        bg="light"
-        variant="light"
-      >
-        <Navbar.Brand className="navbar-content" href="/">
-          <FontAwesomeIcon
-            className="social-icons changeOn"
-            icon={faImage}
-            size={1}
-          />{" "}
-          Image Compressor
-        </Navbar.Brand>
-      </Navbar>
-
       <div className="row mt-5">
         <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
           {uploadImage ? (
