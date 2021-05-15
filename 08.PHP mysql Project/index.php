@@ -2,7 +2,7 @@
 include( 'config\db_connect.php ');
 
 // Write query for all notes    
-$sql = 'SELECT * FROM `notes`  ORDER BY `created_at`';
+$sql = 'SELECT * FROM `note`  ORDER BY `created_at`';
 
 // check connection
 	if(!$sql){
@@ -18,7 +18,7 @@ $sql = 'SELECT * FROM `notes`  ORDER BY `created_at`';
 	}  
 
 // fetch the resulting rows as an array
-$notes =mysqli_fetch_all($result, MYSQLI_ASSOC);
+$note =mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 //free space
 mysqli_free_result($result);
@@ -41,16 +41,16 @@ mysqli_close($conn);
 	<div class="container">
 		<div class="row">
 
-			<?php foreach($notes as $notes) : ?>
+			<?php foreach($note as $note) : ?>
 
 				<div class="col s6 md3">
 					<div class="card z-depth-0">
 						<div class="card-content center">
-							<h4><?php echo htmlspecialchars($notes['title']); ?></h4>
-							<div><?php echo htmlspecialchars($notes['desc']); ?></div>
+							<h4><?php echo htmlspecialchars($note['title']); ?></h4>
+							<div><?php echo htmlspecialchars($note['desc']); ?></div>
 						</div>
 						<div class="card-action right-align">
-							<a class="brand-text" href="details.php?Id=<?php echo $notes['Id'] ?>">More info -></a>
+							<a class="brand-text" href="details.php?id=<?php echo $note['id'] ?>">More info -></a>
 						</div>
 					</div>
 				</div>

@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
             $desc = mysqli_real_escape_string($conn , $_POST['desc']);
 
             //create sql
-            $sql = "INSERT INTO `notes` (`title`, `desc`) VALUES( '$title' , '$desc' )";
+            $sql = "INSERT INTO `note` (`title`, `desc`) VALUES( '$title' , '$desc' )";
 
             // save to db and check
             if(mysqli_query($conn,$sql)){
