@@ -2,7 +2,7 @@ Introduction (
  What is CSS
  default browser styling
  Syntax
-) (PPT)
+) 
 
 //Code
 Inline and embedded style

@@ -1,4 +1,5 @@
 /*
+
  Client         <- Request             Server
                  Response ->
 
@@ -14,6 +15,7 @@ Ports: A Program running on a computer can listen for requests sent to a particu
 eg: 172.0.0.1.3000
 
 https://www.hostinger.in/tutorials/what-is-localhost
+
 */
 
 var http = require('http');
