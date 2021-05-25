@@ -1,0 +1,8 @@
+Project 1:
+Random user generator using cdn
+
+Widget method
+
+vue cdn : 
+
+<script src="https://unpkg.com/vue@next"></script>
