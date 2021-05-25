@@ -1,0 +1,38 @@
+0opensource
+
+higher star than react have potential can boom in future
+
+drivven by open source developers in their free time
+
+Frontend framework
+
+standalone widget 
+
+SPA
+
+can use it as widget or as full site 
+
+docs are one of the best
+
+
+
+context:
+
+1. Random user generator 
+using cdn (we can also use cdn for react too... btvin this way we will create vue widget)
+
+
+weather app -- The main functionality for frontend developer is to able to fetch apis
+
+1.  install cli version
+npm i -g @vue/cli
+
+2. create vue app
+vue create app-name
+
+3.  take api from -- https://openweathermap.org/api
+
+
+api key:
+7b97d0d47553127f3fb20759981443ad
+98c74540796057cc93a4fa6105eb131a
