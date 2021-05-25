@@ -1,4 +1,4 @@
-0opensource
+opensource
 
 higher star than react have potential can boom in future
 
@@ -22,7 +22,7 @@ context:
 using cdn (we can also use cdn for react too... btvin this way we will create vue widget)
 
 
-weather app -- The main functionality for frontend developer is to able to fetch apis
+2.weather app -- The main functionality for frontend developer is to able to fetch apis
 
 1.  install cli version
 npm i -g @vue/cli
