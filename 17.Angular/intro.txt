@@ -1,0 +1,14 @@
+1. Install Angualr CLi
+npm install -g @angular/cli
+
+2.Create new app
+ng new my-app
+
+3. Styling framwwork
+ng add @angular/material
+
+
+Explain file structure
+
+4. To add new components
+ng g c component name
