@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <form class="well">
+      <div class="form-group">
+        <input [(ngModel)]="username" name="username" (keyup)="searchUser()" class="form-control" placeholder="Enter Github username..." />
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="panel panel-default" *ngIf="user">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ user.name }}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <img src="{{ user.avatar_url }}" class="img-thumbnail" alt="Image">
+      <a class="btn btn-block" target="_blank" href="{{ user.html_url }}">View Profile</a>
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <span class="label label-primary">{{ user.public_repos }} Public Repos</span>
+      <span class="label label-success">{{ user.public_gists }} Public Gists</span>
+      <span class="label label-info">{{ user.followers }} Followers</span>
+      <span class="label label-warning">{{ user.following }} Following</span>
+      <br/>
+
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Username:</strong> {{ user.login }}</li>
+        <li class="list-group-item"><strong>Role:</strong> {{ user.bio }}</li>
+        <li class="list-group-item"><strong>Location: </strong> {{ user.location }}</li>
+        <li class="list-group-item"><strong>Email:</strong> {{ user.email }}</li>
+        <li class="list-group-item"><strong>Blog:</strong><a href="{{ user.blog }}"> {{ user.blog }}</a></li>
+        <li class="list-group-item"><strong>Member Since: </strong> {{ user.created_at }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<ul class="list-group" *ngFor="let repo of repos">
+  <li class="list-group-item">
+    <div class="panel">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h3 class="panel-title"><a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a></h3>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <span class="label label-default">{{ repo.watchers }} Watchers</span>
+            <span class="label label-primary">{{ repo.forks }} Forks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

@@ -36,3 +36,15 @@ vue create app-name
 api key:
 7b97d0d47553127f3fb20759981443ad
 98c74540796057cc93a4fa6105eb131a
+
+
+
+
+
+
+class1@iemlabs.com
+class2@iemlabs.com
+class3@iemlabs.com
+class4@iemlabs.com
+
+pass:  IEMLabs12345@
