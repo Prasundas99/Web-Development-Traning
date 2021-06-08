@@ -1,5 +1,3 @@
-const bodyParser = require("body-parser");
-const mongoose = require('mongoose');
 const Postmodel = require("../models/posts");
 
 
@@ -33,7 +31,6 @@ app.get("/compose", async (req, res) => {
 
 
 app.post("/compose", async (req, res)=>{
-  const post = req.body;
   const newPost = new Postmodel({
     Title: req.body.title,
     Message: req.body.message

@@ -22,7 +22,8 @@ app.use(express.static("public"));
 controllers(app)
 
 
-
-app.listen(5000);
-console.log("Server started at PORT 5000");
+//
+app.listen(5010,function(){
+    console.log("server is running on port 5010");
+ });
 

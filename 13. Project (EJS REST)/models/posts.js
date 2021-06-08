@@ -9,8 +9,6 @@ const Postschema = mongoose.Schema({
         required: true
     },
 
-   
-
 });
 
 
