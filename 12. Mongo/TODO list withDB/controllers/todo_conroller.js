@@ -27,20 +27,27 @@ module.exports = function(app){
         
    });
    
-    app.post('/todo',urlencodedParser, function(req, res){
-      //get data from the view and add it to mongodb  
-      var newTodo = Todo(req.body).save(function(err,data){
-        res.json(data)
-      })
-    });
-    
-    app.delete('/todo/:item', function(req, res){   
-      //delete requested items from mongodb
-      Todo.find({item:req.params.item.replace(/\-/g, " ")}).remove(function(err,data){
-        if(err) throw err;
-        res.json(data)
-      });
+   app.post('/todo', urlencodedParser, function (req, res) {
+    //get data from the veiw and add it to mongodb
 
-  });
+    var newTodo = Todo(req.body).save(function(err,data){
+    if (err) throw err;
+    res.json(data);
+    });
+  //data.push(req.body);
+
+})
+
+app.delete('/todo/:item',function(req,res){
+    //delete the requested item from db
+
+    Todo.find({item:req.params.item}).remove(function(err,data){
+      console.log(req.params.item);
+        if(err) throw err;
+        res.json(data);
+    });
+});
+
+
     
 }

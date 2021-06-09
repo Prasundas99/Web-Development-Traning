@@ -2,7 +2,12 @@
 var mongoose = require('mongoose');
 
 var todoSchema = new mongoose.Schema({
-    item : String
+    item :  {
+        type: String,
+        required: true,
+        minlength: 1,
+        trim: true
+      }
 });
 
 //creating a model
