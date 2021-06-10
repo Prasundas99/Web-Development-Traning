@@ -68,7 +68,9 @@ app.post("/compose", async (req, res) => {
   console.log(newPost);
   try {
     await newPost.save();
-    res.json(newPost);
+   // res.json(newPost);
+    res.redirect("/");
+});
   } catch (error) {
     console.log(error);
   }
