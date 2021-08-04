@@ -41,10 +41,3 @@ api key:
 
 
 
-
-class1@iemlabs.com
-class2@iemlabs.com
-class3@iemlabs.com
-class4@iemlabs.com
-
-pass:  IEMLabs12345@
