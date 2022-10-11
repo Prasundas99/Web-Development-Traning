@@ -3,3 +3,8 @@ form {
     margin: 21px auto;
     padding: 30px;
 }
+.page-footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%
+  }
