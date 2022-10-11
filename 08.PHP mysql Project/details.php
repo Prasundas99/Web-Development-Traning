@@ -49,9 +49,11 @@ if(isset($_POST['Delete'])){
 
 	<div class="container center">
 		<?php if($note): ?>
-			<h4><?php echo $note['title']; ?></h4>
+			<h4>Note Title</h4>
+			<p><?php echo $note['title']; ?></p>
+			<h4>Note Created on</h4>
 			<p><?php echo date($note['created_at']); ?></p>
-			<h5>Details:</h5>
+			<h4>Note</h4>
 			<p><?php echo $note['desc']; ?></p>
 
 			<!--Delete Form--->
@@ -69,5 +71,3 @@ if(isset($_POST['Delete'])){
 	<?php include('templates/footer.php'); ?>
 
 </html>
-
-
