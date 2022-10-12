@@ -58,7 +58,7 @@ if(isset($_POST['Delete'])){
 
 			<!--Delete Form--->
 			<form action="details.php" method="POST">
-			<input type="hidden" name="id_to_delete" value="<?php $note['id'] ?>">
+			<input type="hidden" name="id_to_delete" value="<?php echo $note['id'] ?>">
 			<input type="submit" name="Delete" value="Delete" class="btn brand">
 			</form>
 
