@@ -5,7 +5,7 @@ HTML(Hyper Text Markup Language) is the language of the web. HTML tags are used 
 
 
 ## Table of Contents
-- Introduction to HTML
+- [Introduction to HTML](#introduction-to-html)
 - Syntax and Structure
 - HTML Tags
   1. Heading Tags
