@@ -1,0 +1,1 @@
+This is a simple audio visualiser app created and comitted by Sayak Raha, A CSE undergrad of University of Engineering & Management Kolkata. Just upload a file and see it's visualiser.
