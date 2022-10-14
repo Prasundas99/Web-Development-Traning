@@ -5,6 +5,7 @@ HTML(Hyper Text Markup Language) is the language of the web. HTML tags are used 
 
 
 ## Table of Contents
+<<<<<<< HEAD
 - [Introduction to HTML](##Introduction-to-HTML)
 - [Syntax & Structure](##Syntax-&-Structure)
 - [HTML Tags](##HTML-Tags)
@@ -24,6 +25,26 @@ HTML(Hyper Text Markup Language) is the language of the web. HTML tags are used 
   14. [Form Tags](###Form-Tags)
 - [A Complete HTML Example](##A-Complete-HTML-Example)
 - [End is the new Beginning](##End-is-the-new-Beginning)
+=======
+- [Introduction to HTML](#introduction-to-html)
+- Syntax and Structure
+- HTML Tags
+  1. Heading Tags
+  2. Paragraph Tag
+  3. Anchor Tag
+  4. Br Tag
+  5. Img Tag
+  6. Video Tag
+  7. Bold, Italic, Underlining Tag
+  8. Hr Tag
+  9. Subscript & Superscript Tag
+  10. Div Tag
+  11. Span Tag
+  12. List Tags
+  13. Table Tags
+  14. Form Tags
+- A Complete HTML Example
+>>>>>>> fee23cd1008f9c6fee3c6c919fee275cea69096a
   
 
 ## Introduction to HTML
