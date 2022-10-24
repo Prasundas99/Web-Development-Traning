@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.4s;
+}
+.mainbody{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    position: relative;
+    width: 80%;
+    height: 75vh;
+    background-color: rgb(29, 113, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    /* border: 2px solid white; */
+    box-shadow: 4px 4px 20px rgba(17, 17, 17, 0.479);
+}
+.panel h1{
+    color: white;
+    position: absolute;
+    top: 20%;
+    
+}
+.limlow, .limhigh{
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    left: 15%;
+    height: 2.2rem;
+    width: 9.5rem;
+    padding-left: 0.5rem;
+    padding-right: 2.2rem;
+    background-color: chartreuse;  
+    /* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.644); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+.limhigh{
+    left: auto;
+    right: 15%;
+}
+.limlow span, .limhigh span{
+    background-color: chartreuse;
+    color: white;
+    width: 2.2rem;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* box-shadow: inherit; */
+    cursor: pointer;
+    pointer-events: none;
+}
+i{
+    color: black;
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+ul{
+    list-style: none;
+    
+}
+ul li{
+    display: flex;
+    width: 9.5rem;
+    height: 2rem;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.616);
+   
+}
+.limlowlist{
+    position: absolute;
+    left: 15%;
+    top: 54%;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+.limhighlist{
+    position: absolute;
+    left: auto;
+    right: 15%;
+    top: 54%;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+.limlowlist li, .limhighlist li{
+    opacity: 0;
+    pointer-events: none; 
+    transition: 0.2s;
+    transition-delay: calc(var(--i)*0.1s);
+}
+input{
+    height: 2.2rem;
+    width: 10rem;
+    border-radius: 1.1rem;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input:active, input:focus{
+    border-style: none;
+    outline: none;
+}
+.buttonsclass{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    position: absolute;
+    bottom: 20%;
+}
+.submit, .reset{
+    width: 8.5rem;
+    height: 2.2rem;
+    outline: none;
+    border-radius: 1.1rem;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.6rem;
+}
+.limlow:active span i{
+    transform: rotate(180deg);
+}
+.active{
+    opacity: 1;
+    pointer-events: all;
+}
+li.active{
+    opacity: 1;
+    pointer-events: all;
+    
+}
+button{
+    cursor: pointer;
+}
+.display{
+    width: fit-content;
+    padding: 1rem;
+    padding-left: 2.2rem;
+    font-size: 2.2rem;
+    color: rgb(206, 236, 255);
+    position: absolute;
+    font-weight: 700;
+    top: -200%;
+}
+.locked{
+    background-color: rgb(105, 211, 0);
+    pointer-events: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px rgba(20, 20, 20, 0.637);
+}
+.locked span, .locked span i{
+    background-color: rgb(105, 211, 0);
+    color: rgb(255, 255, 255);
+}
