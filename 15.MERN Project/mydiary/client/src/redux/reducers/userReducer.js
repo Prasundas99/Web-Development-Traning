@@ -30,6 +30,8 @@ import {
             case USER_LOGIN_FAILED: 
                 return{
                     isAuthenticated: false,
+                    error: action.payload,
+                    loading: false,
                 };
             case USER_LOGOUT:
               return{
