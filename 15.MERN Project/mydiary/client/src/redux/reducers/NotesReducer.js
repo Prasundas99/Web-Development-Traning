@@ -1,6 +1,6 @@
 import { FETCH_ALL, CREATE, UPDATE, DELETE} from '../actionTypes/notesConstants';
 
-const notes = (notes = [], action) => {
+const notes = ({notes = [] , error=""}, action) => {
   switch (action.type) {
     case FETCH_ALL:
       return {notes: action.payload};
