@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 import bodyParser from "body-parser";
+import rateLimit from "express-rate-limit";
 
 //db connection import
 import mongooseConnection from "./config/db.js";
@@ -27,6 +28,14 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: "true" }));
 app.use(morgan("dev"));
 app.use(cors());
 
+//Setting up Rate Limiter (100 request per 1 minute)
+const limiter = rateLimit({
+    windowMs: 1 * 60 * 1000, 
+    max: 100, 
+    standardHeaders: true,
+    legacyHeaders: false,
+})
+app.use(limiter)
 
 
 
