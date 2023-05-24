@@ -4,7 +4,7 @@
   "description": "",
   "main": "01. Functional Expression.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^2.0.20"
   },
   "devDependencies": {},
